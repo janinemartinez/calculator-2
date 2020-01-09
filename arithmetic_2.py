@@ -31,15 +31,19 @@ def multiply(tokens):
 
 def divide(tokens):
     """Divide the first input by the second and return the result."""
-    x = tokens[i]
+    x = tokens[1]
     for i in range(len(tokens)):
         if i > 1:
-            x /= i
+            x = x / tokens[i]
     return x
 
-def square(num1):
+def square(tokens):
     """Return the square of the input."""
-    x = num1 * num1
+    x = []
+    for i in range(len(tokens)):
+        if i > 0:
+            y = tokens[i] * tokens[i]
+            x.append(y)
     return x
 
 def cube(num1):

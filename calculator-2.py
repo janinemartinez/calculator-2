@@ -22,7 +22,7 @@ def call_arithmetic_functions(tokens):
     elif tokens[0] == "/":
         print(divide(tokens))
     elif tokens[0] == "square":
-        print(square(tokens[1]))
+        print(square(tokens))
     elif tokens[0] == "cube":
         print(cube(tokens[1]))
     elif tokens[0] == "pow":
