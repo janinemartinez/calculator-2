@@ -20,14 +20,21 @@ def subtract(tokens):
             x -= tokens[i]
     return x
 
-def multiply(num1, num2):
+def multiply(tokens):
     """Multiply the two inputs together."""
-    x = num1 * num2
+
+    x = 1
+    for i in range(len(tokens)):
+        if i > 0:
+            x *= tokens[i]
     return x
 
-def divide(num1, num2):
+def divide(tokens):
     """Divide the first input by the second and return the result."""
-    x = num1 / num2
+    x = tokens[i]
+    for i in range(len(tokens)):
+        if i > 1:
+            x /= i
     return x
 
 def square(num1):

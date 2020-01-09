@@ -18,9 +18,9 @@ def call_arithmetic_functions(tokens):
     elif tokens[0] == "-":
         print(subtract(tokens))
     elif tokens[0] == "*":
-        print(multiply(tokens[1], tokens[2]))
+        print(multiply(tokens))
     elif tokens[0] == "/":
-        print(divide(tokens[1], tokens[2]))
+        print(divide(tokens))
     elif tokens[0] == "square":
         print(square(tokens[1]))
     elif tokens[0] == "cube":
