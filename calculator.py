@@ -1,4 +1,4 @@
-import arithmetic
+from arithmetic import *
 
 def user_input():
 
@@ -10,11 +10,31 @@ def user_input():
 
     print(tokens)
     return tokens
-    
+
+
 def call_arithmetic_functions(tokens):
     if tokens[0] == "+":
-        print(arithmetic.add(tokens[1], tokens[2]))
-
+        print(add(tokens[1], tokens[2]))
+    elif tokens[0] == "-":
+        print(subtract(tokens[1], tokens[2]))
+    elif tokens[0] == "*":
+        print(multiply(tokens[1], tokens[2]))
+    elif tokens[0] == "/":
+        print(divide(tokens[1], tokens[2]))
+    elif tokens[0] == "square":
+        print(square(tokens[1]))
+    elif tokens[0] == "cube":
+        print(cube(tokens[1]))
+    elif tokens[0] == "pow":
+        print(power(tokens[1], tokens[2]))
+    elif tokens[0] == "mod":    
+        print(mod(tokens[1], tokens[2]))
+    elif tokens[0] == "x+":
+        print(add_mult(tokens[1], tokens[2], tokens[3]))
+    elif tokens[0] == "cube+":
+        print(add_cubes(tokens[1], tokens[2]))
+    else:
+        print("INVALID INPUT, PLEASE TRY AGAIN!")
 
 
 while True:
